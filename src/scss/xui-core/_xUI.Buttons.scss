@@ -1,0 +1,62 @@
+/*=============================================================================
+// Atigeo xUI Library: _xUI.Buttons.scss
+//-----------------------------------------------------------------------------
+// NOTES:
+//
+//-----------------------------------------------------------------------------
+// 2014-05-06 JRM - Created.
+//===========================================================================*/
+/*---------------------------------------------------------------------------*/
+/* Compass mixins.
+/*---------------------------------------------------------------------------*/
+@import "../bootstrap/mixins";
+@import "compass/css3";
+
+.xui {
+
+  $orangeWhite: lighten ($xui-color-orange-btn-gradient-end, 10%);
+
+  .btn {
+    font-family: $xui-font-sans-serif-light !important;
+    font-weight: inherit;
+    border-radius: 0px;
+    border: 1px solid $xui-color-orange-btn-gradient-start;
+    padding: .4em 11px;
+    height: 32px;
+    line-height: 1em;
+    color: $orange-button-text !important;
+    // @include button-variant($orange-button-text, $white, 1px solid $orange-button-border);
+    @include border-radius(0);
+    @include background-image(linear-gradient($white, $xui-color-orange-btn-gradient-end 20%, $xui-color-orange-btn-gradient-start 75%));
+  }
+
+  .btn:hover {
+    border: 1px solid $xui-color-orange-btn-gradient-start;
+    @include background-image(linear-gradient($white, $color-orange-hover-light 20%, $color-orange-hover-dark 75%));
+  }
+
+  .btn-sm,
+  .btn-group-sm > .btn {
+    font-size: 14px;
+    line-height: 1em;
+  }
+
+  .btn-grey {
+    border: 1px solid $xui-button-grey;
+    color: $white !important;
+    @include background-image(linear-gradient($color-grey-btn-light, $color-grey-btn-medium 20%, $color-grey-btn-dark 75%));
+  }
+  .btn-grey:hover {
+    border: 1px solid $black;
+    @include background-image(linear-gradient($color-grey-btn-light, $color-gray-medium 20%, $color-near-black 75%));
+  }
+
+  .fa.close {
+    @include opacity(0.5);
+  }
+  .fa.close:hover, .fa.close:focus {
+    cursor: pointer;
+    @include opacity(0.8);
+  }
+
+}

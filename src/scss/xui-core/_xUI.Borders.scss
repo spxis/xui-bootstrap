@@ -1,0 +1,44 @@
+/*=============================================================================
+// Atigeo xUI Library: _xUI.Borders.scss
+//-----------------------------------------------------------------------------
+// NOTES:
+//
+//-----------------------------------------------------------------------------
+// 2014-05-01 JRM - Created.
+//===========================================================================*/
+
+/*---------------------------------------------------------------------------*/
+/* Border declarations.
+/*---------------------------------------------------------------------------*/
+
+$defaultRoundedBorder: 5px;
+
+@mixin rounded-border($radius: $defaultRoundedBorder) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -khtml-border-radius: $radius;
+}
+
+@mixin rounded($vert, $horz, $radius: $defaultRoundedBorder) {
+  border-#{$vert}-#{$horz}-radius: $radius;
+  -moz-border-radius-#{$vert}#{$horz}: $radius;
+  -webkit-border-#{$vert}-#{$horz}-radius: $radius;
+}
+
+@mixin rounded-top-left() {
+  @include rounded(top, left, $defaultRoundedBorder);
+}
+
+@mixin rounded-top-right() {
+  @include rounded(top, right, $defaultRoundedBorder);
+}
+
+@mixin rounded-bottom-left() {
+  @include rounded(bottom, left, $defaultRoundedBorder);
+}
+
+@mixin rounded-bottom-right() {
+  @include rounded(bottom, right, $defaultRoundedBorder);
+}
+

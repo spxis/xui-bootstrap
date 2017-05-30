@@ -1,0 +1,37 @@
+{
+    "name": "xui-bootstrap",
+    "version": "1.2.0",
+    "description": "xPatterns Applications Visual Style Guide applied to Bootstrap 3 with SASS. Based on the Official Twitter Sass port of Bootstrap v3.2.0 (https://github.com/twbs/bootstrap-sass). The original Twitter Bootstrap (which relies on LESS) can be found at https://github.com/twbs/bootstrap.",
+    "author": {
+        "name": "John Robert Morris",
+        "email": "john.morris@atigeo.com"
+    },
+    "main": [
+        "./dist/js/xui-bootstrap.js",
+        "./dist/css/xui-bootstrap.css",
+        "./dist/fonts/*"
+    ],
+    "keywords": [
+        "xui",
+        "bootstrap",
+        "bootstrap 3",
+        "sass",
+        "scss",
+        "xpatterns",
+        "atigeo",
+        "style",
+        "style guide"
+    ],
+    "license": "MIT",
+    "homepage": "http://git.life.atigeo.com/xpatterns/xui-bootstrap",
+    "dependencies": {
+        "bootstrap-sass-twbs": "~3.2.0"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

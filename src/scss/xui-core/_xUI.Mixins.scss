@@ -1,0 +1,76 @@
+/*=============================================================================
+// Atigeo xUI Library: _xUI.Mixins.scss
+//-----------------------------------------------------------------------------
+// NOTES:
+//
+//-----------------------------------------------------------------------------
+// 2014-05-21 JRM - Created.
+//===========================================================================*/
+
+/*---------------------------------------------------------------------------*/
+/* Text design mixins.
+/*---------------------------------------------------------------------------*/
+
+//.my-class
+//{
+//  background: black(0.15);
+//  color: white(0.9);
+//}
+
+@mixin box-emboss($opacity, $opacity2){
+  box-shadow: white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+//.box{
+//  @include box-emboss(0.8, 0.05);
+//}
+
+@mixin letterpress($opacity){
+  text-shadow:white($opacity) 0 1px 0;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Other useful mixins.
+/*---------------------------------------------------------------------------*/
+
+@mixin truncate
+{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* This mixin will break if auto-whitespaced in IntelliJ */
+@mixin prefixify($style, $params){
+  -webkit-#{$style}: $params;
+  -moz-#{$style}: $params;
+  -ms-#{$style}: $params;
+  -o-#{$style}: $params;
+  #{$style}: $params;
+}
+
+@mixin unselectable
+{
+  -webkit-touch-callout: none;
+  @include prefixify(user-select, none);
+}
+
+@mixin border-top-radius($radius){
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+}
+
+@mixin border-bottom-radius($radius){
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin border-left-radius($radius){
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin border-right-radius($radius){
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}

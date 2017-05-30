@@ -1,0 +1,34 @@
+/*=============================================================================
+// Atigeo xUI Library: _xUI.Badges.scss
+//-----------------------------------------------------------------------------
+// NOTES:
+//
+//-----------------------------------------------------------------------------
+// 2014-06-22 JRM - Created.
+//===========================================================================*/
+
+//
+// Badges
+// --------------------------------------------------
+
+
+// Base classes
+.badge {
+  color: $badge-color;
+  background-color: $badge-bg-color;
+}
+
+// Hover state, but only for links
+a.badge {
+  &:hover,
+  &:focus {
+    color: $badge-link-hover-color;
+  }
+}
+
+// Account for counters in navs
+a.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+  color: $badge-active-color;
+  background-color: $badge-active-bg;
+}

@@ -1,0 +1,50 @@
+/*=============================================================================
+// Atigeo xUI Library: _xUI.Buttons.scss
+//-----------------------------------------------------------------------------
+// NOTES:
+//
+//-----------------------------------------------------------------------------
+// 2014-05-06 JRM - Created.
+//===========================================================================*/
+
+$header-line-height: 38px;
+$header-border-width: 4px;
+
+.xui {
+  .modal-content {
+    max-width: 100%;
+    .modal-header {
+      background-color: $xui-color-brand-gray;
+      border-bottom: $header-border-width solid $header-border-bottom;
+      line-height: $header-line-height;
+      height: $header-line-height + $header-border-width;
+      padding-top: 0px;
+      @include unselectable;
+      @include box-sizing(box-model);
+      > h1,
+      > h2,
+      > h3,
+      > h4,
+      > h5,
+      > h6 {
+        color: $header-text-color !important;
+        line-height: $header-line-height;
+      }
+      > .button {
+        color: $header-text-color;
+        line-height: $header-line-height;
+      }
+      .fa-times {
+        color: $header-text-color;
+        line-height: $header-line-height;
+      }
+    }
+    .container {
+      max-width: 100%;
+      textarea
+      {
+        max-width: 100% /* Prevents growing textareas from expanding past the modal window. */
+      }
+    }
+  }
+}

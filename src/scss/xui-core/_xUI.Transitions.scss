@@ -1,0 +1,36 @@
+/*=============================================================================
+// Atigeo xUI Library: _xUI.Transitions.sass.scss
+//-----------------------------------------------------------------------------
+// NOTES:
+//
+//-----------------------------------------------------------------------------
+// 2014-05-01 JRM - Created.
+//===========================================================================*/
+
+/*---------------------------------------------------------------------------*/
+/* Transition declarations.
+/*---------------------------------------------------------------------------*/
+
+@mixin transition($speed){
+  -moz-transition: $speed;
+  -ms-transition: $speed;
+  -o-transition: $speed;
+  -webkit-transition: $speed;
+  transition: $speed;
+}
+
+@mixin transition-fast
+{
+  @include transition(0.35s);
+}
+
+@mixin transition-medium
+{
+  @include transition(0.85s);
+}
+
+@mixin transition-slow
+{
+  @include transition(1.50s);
+}
+

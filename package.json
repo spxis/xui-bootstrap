@@ -1,0 +1,53 @@
+{
+  "name": "xui-bootstrap",
+  "version": "1.1.1",
+  "description": "xPatterns Applications Visual Style Guide applied to Bootstrap 3 with SASS.",
+  "author": {
+    "name": "John Robert Morris",
+    "email": "john.morris@atigeo.com"
+  },
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-bower-task": "^0.4.0",
+    "grunt-bowercopy": "^1.1.0",
+    "grunt-bump": "0.0.15",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.1",
+    "load-grunt-tasks": "^0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install && grunt install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.life.atigeo.com/xpatterns/xui-bootstrap"
+  },
+  "keywords": [
+    "xui",
+    "bootstrap",
+    "bootstrap 3",
+    "sass",
+    "scss",
+    "xpatterns",
+    "atigeo",
+    "style",
+    "style guide"
+  ],
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "http://git.life.atigeo.com/xpatterns/xui-bootstrap/issues"
+  },
+  "homepage": "http://git.life.atigeo.com/xpatterns/xui-bootstrap"
+}

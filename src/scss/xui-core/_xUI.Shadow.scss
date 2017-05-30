@@ -1,0 +1,36 @@
+/*=============================================================================
+// Atigeo xUI Library: _xUI.Shadow.scss
+//-----------------------------------------------------------------------------
+// NOTES:
+//
+//-----------------------------------------------------------------------------
+// 2014-05-06 JRM - Created.
+//===========================================================================*/
+
+/*---------------------------------------------------------------------------*/
+/* Shadow declarations.
+/*---------------------------------------------------------------------------*/
+
+@mixin shadow-large{
+  @include single-box-shadow(rgba(0, 0, 0, .35), 0, 0, 15px);
+}
+
+@mixin shadow-light{
+  @include single-box-shadow(rgba(0, 0, 0, .15), 0, 0, 6px);
+}
+
+@mixin shadow-medium{
+  @include single-box-shadow(rgba(0, 0, 0, .25), 0, 0, 8px);
+}
+
+@mixin shadow-dark{
+  @include single-box-shadow(rgba(0, 0, 0, .90), 0, 0, 8px);
+}
+
+@mixin shadow-left{
+  @include box-shadow(-5px 0px 5px 0px rgba(50, 50, 50, 0.75));
+}
+
+@mixin shadow-right{
+  @include box-shadow(4px 4px 5px 0px rgba(50, 50, 50, 0.75));
+}

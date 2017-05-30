@@ -1,0 +1,50 @@
+/*=============================================================================
+// Atigeo xUI Library: _xUI.Colors.scss
+//-----------------------------------------------------------------------------
+// NOTES:
+//
+//-----------------------------------------------------------------------------
+// 2014-01-15 JRM - Created.
+// 2014-06-30 JRM - Updated for xui-bootstrap bower project.
+//===========================================================================*/
+
+/*---------------------------------------------------------------------------*/
+/* Colour variable declarations.
+/*---------------------------------------------------------------------------*/
+
+// 01.1 xPatterns Style Guide Main Brand Colors
+$xui-color-brand-orange: #ff8a02;
+$xui-color-brand-gray: #636466;
+$xui-color-brand-light-gray: #eaeaea;
+$xui-color-brand-white: #fff;
+
+// 01.2 xPatterns Style Guide Main Text Colors
+$xui-color-text-main-body: #636466;
+$xui-color-text-hyperlink: #ff8a02;
+$xui-color-text-sub-body: #eaeaea;
+
+// 01.3 xPatterns Style Guide Color Palette
+$xui-color-1-orange: #ff8a02;
+$xui-color-2-yelloworange: #ffc402;
+$xui-color-3-green: #5daf51;
+$xui-color-4-blue: #35659f;
+$xui-color-5-gray: #686868;
+
+// 01.4 xPatterns Style Guide Gradient Colors
+$xui-color-orange-btn-gradient-start: #ffba02;
+$xui-color-orange-btn-gradient-mid: #ffba02;
+$xui-color-orange-btn-gradient-end: #fbc383;
+
+// 01.5 xPatterns Style Guide Status Colors
+$xui-color-status-regular: $xui-color-5-gray;
+$xui-color-status-positive: $xui-color-3-green;
+$xui-color-status-warning: $xui-color-2-yelloworange;
+$xui-color-status-negative: #e50007;
+$xui-color-status-error: $xui-color-status-negative;
+
+// OTHER ATOMIC COLORS NOT PART OF xPatterns Style Guide Palette
+$white: $xui-color-brand-white;
+$black: #000;
+$orange: $xui-color-1-orange;
+$green: $xui-color-3-green;
+$blue: $xui-color-4-blue;

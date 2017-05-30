@@ -1,0 +1,63 @@
+# How to deploy GIT TAGS
+
+http://stackoverflow.com/questions/19456091/bower-register-new-version
+% git tag v1.0.4
+
+% git tag
+v1.0.0
+
+% git push origin v1.0.4
+Username for 'https://github.com': spxis
+Password for 'https://spxis@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/spxis/xui-bootstrap.git
+ * [new tag]         v1.0.0 -> v1.0.0
+
+% bower info xui-bootstrap
+bower xui-bootstrap#*       not-cached git://github.com/spxis/xui-bootstrap.git#*
+bower xui-bootstrap#*          resolve git://github.com/spxis/xui-bootstrap.git#*
+bower xui-bootstrap#*         download https://github.com/spxis/xui-bootstrap/archive/v1.0.0.tar.gz
+bower xui-bootstrap#*          extract archive.tar.gz
+bower xui-bootstrap#*         resolved git://github.com/spxis/xui-bootstrap.git#1.0.0
+
+{
+  name: 'xui-bootstrap',
+  version: '1.0.0',
+  authors: [
+    'John Morris <john@spxis.com>'
+  ],
+  description: 'xPatterns Applications Visual Style Guide - Bootstrap Project',
+  main: [
+    './dist/js/xui-bootstrap.js',
+    './dist/css/xui-bootstrap.css',
+    './dist/fonts/*'
+  ],
+  keywords: [
+    'xui',
+    'bootstrap',
+    'bootstrap 3',
+    'sass',
+    'scss',
+    'xpatterns',
+    'atigeo',
+    'style',
+    'style guide'
+  ],
+  license: 'MIT',
+  homepage: 'http://www.atigeo.com',
+  dependencies: {
+    'sass-bootstrap': '3.0.2'
+  },
+  ignore: [
+    '**/.*',
+    'node_modules',
+    'bower_components',
+    'test',
+    'tests'
+  ]
+}
+
+Available versions:
+  - 1.0.0
+
+You can request info for a specific version with 'bower info xui-bootstrap#<version>'

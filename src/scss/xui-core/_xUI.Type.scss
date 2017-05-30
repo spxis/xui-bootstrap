@@ -1,0 +1,42 @@
+/*=============================================================================
+// Atigeo xUI Library: _xUI.Type.scss
+//-----------------------------------------------------------------------------
+//
+//
+//
+//-----------------------------------------------------------------------------
+// 2014-06-26 JRM - Created.
+//===========================================================================*/
+
+$xui-font-sans-serif-thin: "HelveticaNeueW01-Thin", "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica Thin", 'TeXGyreHerosRegular', Helvetica, Arial, "Lucida Grande", sans-serif;
+$xui-font-sans-serif-light: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica Thin", 'TeXGyreHerosRegular', Helvetica, Arial, "Lucida Grande", sans-serif;
+
+html {
+  font-family: $xui-font-sans-serif-light !important;
+}
+
+.xui {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $xui-font-sans-serif-thin;
+    color: $headings-color;
+  }
+  h1 {
+    font-stretch: condensed;
+    font-weight: 200;
+    font-size: 36px;
+  }
+
+  .placeholder-for-john {
+    color: black;
+  }
+
+  p, div {
+    font-family: $xui-font-sans-serif-light;
+    color: $xui-color-brand-gray;
+    a {
+      color: $xui-color-text-hyperlink;
+    }
+  }
+}
+
